@@ -28,7 +28,9 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.css",
+              "../node_modules/ag-grid/dist/styles/ag-grid.css",
+              "../node_modules/ag-grid/dist/styles/theme-fresh.css"
             ],
             "scripts": []
           },
@@ -91,9 +93,15 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "./node_modules/@angular/material/prebuilt-themes/indigo-pink.css",
+              "src/styles.scss",
+              "node_modules/bootstrap/dist/css/bootstrap.min.css"
+              
             ],
-            "scripts": []
+            "scripts": [
+              "node_modules/jquery/dist/jquery.min.js",
+              "node_modules/bootstrap/dist/js/bootstrap.min.js"
+            ]
           }
         },
         "lint": {
@@ -124,5 +132,8 @@
       }
     }
   },
-  "defaultProject": "AngularApp"
+  "defaultProject": "AngularApp",
+  "cli": {
+    "analytics": "9bdbef1e-c161-4f8f-9a07-3a33abb343e3"
+  }
 }
